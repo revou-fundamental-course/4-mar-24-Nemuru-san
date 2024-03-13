@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<title>BMI Calculator using Javascript</title>
+	</head>
+	<body>
+		<h1 class="judul">BMI Calculator Javascript</h1>
+
+		<div class="container">
+			<div
+				action=""
+				class="editForm">
+				<!-- username -->
+				<div class="namaUser">
+					<label for="nama">Username</label>
+					<input
+						type="text"
+						name="nama"
+						id="nama"
+						placeholder="Nama kamu"
+						pattern="^[a-zA-Z]+$"
+						required />
+				</div>
+				<!-- radio -->
+				<div class="jenisKelamin">
+					<p>Jenis kelamin</p>
+					<div class="raido">
+						<div class="pria">
+							<input
+								type="radio"
+								name="gender"
+								id="pria"
+								value="Pria"
+								required />
+							<label for="pria">Pria</label>
+						</div>
+						<div class="wanita">
+							<input
+								type="radio"
+								name="gender"
+								id="wanita"
+								value="Wanita"
+								required />
+							<label for="wanita">Wanita</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- form input -->
+				<div class="tinggiBerat">
+					<div class="tinggi">
+						<label for="tinggi">Tinggi Badan (CM)</label>
+						<input
+							type="number"
+							name="tinggi"
+							id="tinggi"
+							min="0"
+							placeholder="Tinggi badan kamu"
+							class="tinggiBadan"
+							required />
+					</div>
+
+					<div class="berat">
+						<label for="berat">Berat Badan (KG)</label>
+						<input
+							type="number"
+							name="berat"
+							id="berat"
+							min="0"
+							placeholder="Berat badan kamu"
+							required />
+					</div>
+				</div>
+				<div id="peringatan"></div>
+
+				<button
+					class="tombolHitung"
+					id="tombolHitung"
+					type="submit"
+					value="Hitung">
+					Hitung
+				</button>
+			</div>
+			<div class="bmiHasil">
+				<div class="hasil">
+					<h1>Hasil Perhitungan Index BMI</h1>
+					<div id="outputNama">
+						<!-- <span>Nama : John Doe</span> -->
+					</div>
+					<div id="gender">
+						<!-- <span>Jenis kelamin : Wanita</span> -->
+					</div>
+					<div
+						id="hasilIndex"
+						class="hasilIndex">
+						<!-- <p>3.5</p>
+						<span>Kamu Kegemukan</span> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a
+			href="https://github.com/Nemuru-san/RevoU_BMIjs"
+			class="footer"
+			target="_blank"
+			>Mhd. Arfin Alfaridz Ramadhan</a
+		>
+
+		<script src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: #252826;
+	color: #c58b3d;
+}
+
+.judul {
+	text-align: center;
+	margin: 20px;
+}
+
+.container {
+	display: grid;
+	place-items: center;
+	background-color: #fbfcfc;
+	padding: 20px;
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 20px;
+}
+
+.jenisKelamin {
+	display: grid;
+	place-items: center;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.jenisKelamin p {
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.raido {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.raido .pria,
+.raido .wanita {
+	font-size: 14px;
+}
+
+.tinggiBerat {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.namaUser {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.tinggiBerat .tinggi {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.tinggiBerat .berat {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.namaUser input {
+	font-size: 14px;
+	color: #c58b3d;
+	text-align: center;
+}
+
+.tinggi input {
+	font-size: 14px;
+	color: #c58b3d;
+	text-align: center;
+}
+
+.berat input {
+	font-size: 14px;
+	color: #c58b3d;
+	text-align: center;
+}
+
+.namaUser input {
+	font-size: 14px;
+	color: #c58b3d;
+	text-align: center;
+}
+
+.tombolHitung {
+	background-color: #c58b3d;
+	border: none;
+	color: #fbfcfc;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+	margin-top: 10px;
+	border-radius: 20px;
+	font-weight: 800;
+}
+
+.tombolHitung:hover {
+	background-color: #f0b568;
+}
+
+input[type='number'] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 5px 0;
+	box-sizing: border-box;
+	border: 2px solid #c58b3d;
+	border-radius: 4px;
+}
+
+input[type='text'] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 5px 0;
+	box-sizing: border-box;
+	border: 2px solid #c58b3d;
+	border-radius: 4px;
+}
+
+input[type='radio'] {
+	accent-color: #c58b3d;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+// edit dari js
+.userNama {
+	font-weight: 500;
+}
+
+.kurus {
+	font-weight: 700;
+	font-size: 16px;
+	color: rgb(253, 104, 104);
+}
+
+.ketKurus {
+	font-weight: 900;
+	font-size: 20px;
+	color: rgb(253, 104, 104);
+	text-align: center;
+}
+
+.normal {
+	font-weight: 700;
+	font-size: 16px;
+	color: rgb(0, 255, 0);
+	text-align: center;
+}
+
+.ketNormal {
+	font-weight: 900;
+	font-size: 20;
+	color: rgb(0, 255, 0);
+}
+
+.gemuk {
+	font-weight: 700;
+	font-size: 16px;
+	color: rgba(190, 190, 67, 0.93);
+	text-align: center;
+}
+
+.ketGemuk {
+	font-weight: 900;
+	font-size: 20;
+	color: rgba(190, 190, 67, 0.93);
+}
+
+.obesitas {
+	font-weight: 700;
+	font-size: 16px;
+	color: rgb(255, 10, 10);
+	text-align: center;
+}
+
+.ketObesitaas {
+	font-weight: 900;
+	font-size: 20;
+	color: rgb(255, 10, 10);
+}
+
+.isu {
+	color: rgb(236, 123, 123);
+	font-size: 12px;
+}
+
+.hasil {
+	border: 2px solid #c58b3d;
+	border-radius: 20px;
+	margin-top: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.hasil h1 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.hasilIndex {
+	margin-top: 20px;
+	box-shadow: 0 0 10px rgba(255, 204, 102, 0.69);
+	padding: 10px 0;
+	border-radius: 20px;
+}
+
+.footer {
+	display: grid;
+	place-items: center;
+	margin-top: 20px;
+	text-decoration: none;
+	color: #c58b3d;
+}
+
+@media (min-width: 768px) {
+	.bmiHasil {
+		width: 70%;
+	}
+}
+
+@media (min-width: 1024px) {
+	input[type='number'] {
+		width: 350px;
+		padding: 12px 20px;
+		margin: 5px 0;
+		box-sizing: border-box;
+		border: 2px solid #c58b3d;
+		border-radius: 5px;
+	}
+
+	.namaUser {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+
+	.tinggiBerat {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+	}
+
+	.tinggiBerat .tinggi {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.tinggiBerat .berat {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.namaUser input {
+		font-size: 14px;
+		color: #c58b3d;
+		text-align: start;
+	}
+}
